@@ -1,11 +1,121 @@
-/* 
+body {
+    background-color: black;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.traffic {
+    width: 1500px;
+    height: 700px;
+    margin: 100px auto;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    background-image: url("https://img.freepik.com/free-vector/city-street-intersection_107791-24794.jpg?t=st=1745598095~exp=1745601695~hmac=d9827880038d78a9c71529fa1aec911a54ed135f3be09b494b476c6ea5563d84&w=1380");
+    background-size: cover;
+    background-repeat: no-repeat;
 
-*/
+}
+
+.description {
+    text-align: center;
+    width: 700px;
+    height: 300px;
+    margin-left: 100px;
+    margin-top: 11%;
+    border: 3px solid rgb(22, 22, 22);
+    border-radius: 10% 1% 10% 1%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 0px 8px 12px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 4px 0px 8px 12px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 0px 8px 12px rgba(0, 0, 0, 0.75);
+
+
+}
+
+.description h1 {
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.description p {
+    text-align: justify;
+    margin: 30px;
+
+}
+
+.container {
+    background-image: url("https://cdn.shopify.com/s/files/1/0007/0028/5046/files/traffic-light-g8db1e866b_640_480x480.png?v=1659517477");
+    background-size: cover;
+    margin-top: 70px;
+    margin-right: 100px;
+    width: 430px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+
+
+
+
+
+}
+
+
+.greenLight {
+    width: 130px;
+    height: 130px;
+    border: 3px solid black;
+    background: radial-gradient(circle, rgba(59, 55, 55, 1) 0%, rgba(33, 31, 31, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    ;
+    position: absolute;
+    transform: translateY(358px);
+    border-radius: 100%;
+}
+
+.greenOn {
+    background-color: rgb(145, 255, 19);
+    box-shadow: 1px -1px 52px 26px rgba(14, 255, 53, 0.75);
+    -webkit-box-shadow: 1px -1px 52px 26px rgba(14, 255, 53, 0.75);
+    -moz-box-shadow: 1px -1px 52px 26px rgba(14, 255, 53, 0.75);
+}
+
+.yellowLight {
+    width: 130px;
+    height: 130px;
+    border: 3px solid black;
+    background: radial-gradient(circle, rgba(59, 55, 55, 1) 0%, rgba(33, 31, 31, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    position: absolute;
+    transform: translateY(207px);
+    border-radius: 100%;
+
+
+}
+
+.yellowOn {
+    background-color: rgb(255, 230, 0);
+    box-shadow: 1px -1px 52px 26px rgba(255, 245, 14, 0.75);
+    -webkit-box-shadow: 1px -1px 52px 26px rgba(255, 245, 14, 0.75);
+    -moz-box-shadow: 1px -1px 52px 26px rgba(255, 245, 14, 0.75);
+}
+
+
+.redLight {
+    width: 130px;
+    height: 130px;
+    border: 3px solid black;
+    background: radial-gradient(circle, rgba(59, 55, 55, 1) 0%, rgba(33, 31, 31, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    position: absolute;
+    transform: translateY(55px);
+    border-radius: 100%;
+    z-index: 1;
+
+}
+
+.redOn {
+    z-index: 1;
+    background-color: rgb(255, 7, 7);
+    box-shadow: 1px -1px 52px 26px rgba(255, 0, 0, 0.75);
+    -webkit-box-shadow: 1px -1px 52px 26px rgba(255, 0, 0, 0.75);
+    -moz-box-shadow: 1px -1px 52px 26px rgba(255, 0, 0, 0.75);
+
+
+}
