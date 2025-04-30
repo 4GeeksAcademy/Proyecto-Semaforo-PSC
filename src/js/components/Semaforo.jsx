@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropType from "prop-types"
 
 
 const Semaforo = () => {
@@ -12,5 +13,7 @@ const Semaforo = () => {
         </div >
     )
 };
+
+
 
 export default Semaforo;
