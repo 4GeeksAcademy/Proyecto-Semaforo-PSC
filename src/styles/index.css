@@ -12,7 +12,6 @@ body {
     background-image: url("https://img.freepik.com/free-vector/city-street-intersection_107791-24794.jpg?t=st=1745598095~exp=1745601695~hmac=d9827880038d78a9c71529fa1aec911a54ed135f3be09b494b476c6ea5563d84&w=1380");
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 .description {
@@ -27,38 +26,30 @@ body {
     box-shadow: 4px 0px 8px 12px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 4px 0px 8px 12px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 4px 0px 8px 12px rgba(0, 0, 0, 0.75);
-
-
 }
 
 .description h1 {
     margin-top: 20px;
     text-align: center;
-
 }
 
 .description p {
     text-align: justify;
     margin: 30px;
-
 }
 
 .container {
     background-image: url("https://cdn.shopify.com/s/files/1/0007/0028/5046/files/traffic-light-g8db1e866b_640_480x480.png?v=1659517477");
     background-size: cover;
     margin-top: 70px;
-    margin-right: 100px;
+    margin-right: 70px;
+    margin-left: 40px; /* Espacio entre la descripción y el semáforo */
     width: 430px;
     height: 500px;
     display: flex;
     justify-content: center;
-
-
-
-
-
+    position: relative;
 }
-
 
 .greenLight {
     width: 130px;
@@ -83,8 +74,6 @@ body {
     position: absolute;
     transform: translateY(207px);
     border-radius: 100%;
-
-
 }
 
 .yellowOn {
@@ -94,7 +83,6 @@ body {
     -moz-box-shadow: 1px -1px 52px 26px rgb(255, 247, 0);
 }
 
-
 .redLight {
     width: 130px;
     height: 130px;
@@ -103,7 +91,6 @@ body {
     transform: translateY(55px);
     border-radius: 100%;
     z-index: 1;
-
 }
 
 .redOn {
@@ -112,6 +99,40 @@ body {
     box-shadow: 1px -1px 52px 26px rgba(255, 0, 0, 0.75);
     -webkit-box-shadow: 1px -1px 52px 26px rgba(255, 0, 0, 0.75);
     -moz-box-shadow: 1px -1px 52px 26px rgba(255, 0, 0, 0.75);
+}
 
+/* RESPONSIVE LAYOUT */
 
+@media screen and (max-width: 992px) {
+    .traffic {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        width: 100%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .description {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    .container {
+        margin: 0 auto 40px auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .traffic {
+        padding: 10px;
+    }
+
+    .description h1 {
+        font-size: 22px;
+    }
+
+    .description p {
+        font-size: 14px;
+    }
 }
